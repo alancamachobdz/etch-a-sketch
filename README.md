@@ -1,0 +1,1 @@
+This project attempts to create an etch-a-sketch using javascript and following the curriculum at the odin project.
