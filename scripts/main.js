@@ -9,10 +9,18 @@ for(i = 0; i < 256; i++) {
 }
 
 const gridElementList = document.querySelectorAll('.gridElements');
-console.log(gridElementList);
+
 for(let j = 0; j < gridElementList.length; j++) {
     gridElementList[j].addEventListener('mouseover', function() {
         gridElementList[j].style.backgroundColor = 'black';
     })
+}
+
+const button = document.querySelector('#btn');
+button.addEventListener('click', etchASketch)
+
+function etchASketch() {
+    let numberPerSide = Number(prompt('How many squares per side?'));
+    let numberForGrid = numberPerSide * numberPerSide
 }
 
